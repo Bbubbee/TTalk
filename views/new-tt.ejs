@@ -1,0 +1,86 @@
+
+<%- include("partials/header.ejs") %>
+
+
+<body>
+    <div class="container">
+
+        <div class="bubbles">
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:22;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:21;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:28;"></span>
+
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:22;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:21;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:28;"></span>
+        </div>
+
+        <h2 style="text-align: center; margin: 0;">Post a new TT</h2>
+
+        <div class="new-tt">
+            <div class="tt-form">
+                <form action="/submit" method="POST">
+                    <fieldset>
+                        <legend>TT</legend>
+            
+                        <label for="title">Title:</label>
+                        <input type="text" name="title" id="title" maxlength="50">
+            
+                        <label for="content">Content:</label>
+                        <textarea name="content" id="content"></textarea>
+        
+                        <input type="submit" value="Post">
+        
+                    </fieldset>
+                </form>
+            </div>
+        
+
+        </div>
+
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+            $(document).on("keydown", "form", function(event) { 
+                return event.key != "Enter";
+            });
+    </script>
+    
+</body>
+
+<footer>
+    <%- include("partials/footer.ejs") %>
+</footer>

@@ -1,0 +1,119 @@
+
+<%- include("partials/header.ejs") %>
+
+
+<body>
+
+    <div class="container">
+        <div class="bubbles">
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:22;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:21;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:28;"></span>
+
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:22;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:21;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:28;"></span>
+        </div>
+
+
+        <!-- Main Content -->
+        <div class="wrapper">
+            <main class="hero">
+                <div class="left-col">
+                    <h2>Post a TT!</h2>
+                    <p class="subhead">
+                        Talk into the abyss about the things that make you TT.<br>
+                        (TT is to cry)
+                    </p>
+
+                    <div class="cta-buttons">
+                        <a href="./new-tt" class="primary-cta">
+                            <span>New TT </span>
+                            <span><img src="./images/chat-heart.svg" alt="heart"></span>
+                        </a>
+                        <a href="" class="secondary-cta">
+                          
+                        </a>
+                    </div>
+                </div>
+
+                <div class="right-col">
+                    <img src="./images/tt-1.gif" alt="tt dance">
+                </div>
+            </main>
+
+            <!-- Created id so it can be automatically scrolled to when "view TTs" button is pressed.  -->
+            <div id="posts">
+                <div class="post-section">
+                    <h2>Your TTs</h2>
+    
+                    <div class="tt-container">
+    
+                        <% if (locals.all_tts.length>=1) { %>
+                            <% for (var i = 0; i < all_tts.length; i++) { %> 
+                                <div class="card card<%=i%>">
+                                    <div class="card-header">
+                                        <p class="title"><%= all_tts[i].title %></p>
+                                        <p class="date"><%= all_tts[i].date %></p>
+                                    </div>
+                                    <p class="card-text">
+                                        <%= all_tts[i].content %>
+                                    </p>
+                                </div>
+                            <% } %>
+                        <% } else { %>
+                            <p>Nothing to show here ...</p>
+                        <% } %>
+
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+        
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+            
+    </script>
+
+</body>
+
+<footer>
+<%- include("partials/footer.ejs") %>
+
+</footer>
