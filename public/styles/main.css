@@ -160,17 +160,17 @@ h2 {
     gap: 2.3em;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     .tt-container {
         grid-template-columns: repeat(2, auto);
     }
 
     .hero {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .tt-container {
         grid-template-columns: repeat(1, auto);
     }
