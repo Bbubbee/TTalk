@@ -1,12 +1,5 @@
 # TTalk
 
-## To run:
-* CD into the project directory.
-* Use command "npm i"
-* Use command "nodemon index.ejs"
-* Server should run on port 3000.
-* To access site, enter "localhost:3000/" on your browser. Alternatively replace "localhost" with your ip address.
-
 <a name="readme-top"></a>
 
 [![Contributors][contributors-shield]][contributors-url]
@@ -16,6 +9,28 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
+## To run:
+* CD into the project directory.
+* Use command "npm i"
+* Use command "nodemon index.ejs"
+* Server should run on port 3000.
+* To access site, enter "localhost:3000/" on your browser. Alternatively replace "localhost" with your ip address.
+
+
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+### Built With
+![JavaScript Badge](https://img.shields.io/badge/JAVASCRIPT-yellow?style=for-the-badge&logo=javascript&logoColor=white)
+![HTML Badge](https://img.shields.io/badge/HTML-orange?style=for-the-badge&logo=html5&logoColor=white)
+![CSS Badge](https://img.shields.io/badge/css-blue?style=for-the-badge&logo=css3&logoColor=white)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTACT -->
 ## Contact
@@ -32,7 +47,6 @@ Project Link: [https://github.com/Bbubbee/BubsBookReviews](https://github.com/Bb
 ## Acknowledgments
 
 * [README Template](https://github.com/othneildrew/Best-README-Template)
-* [Open Library Search API](https://openlibrary.org/dev/docs/api/search)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
